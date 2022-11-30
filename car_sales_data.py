@@ -33,4 +33,5 @@ dtframe = pd.DataFrame(data)
 df_melted = pd.melt(dtframe,id_vars=['price','dateCrawled'])
 
 
+st.title('Cars prices by date crawled graph')
 st.line_chart(df_melted,x='dateCrawled',y='price')
